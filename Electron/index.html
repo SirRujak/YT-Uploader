@@ -25,6 +25,7 @@
                 height: 100%;
                 margin: 0;
                 background-color: #000000;
+                overflow: auto;
             }
             .flex-item-right_area {
                 display: -webkit-flex;
@@ -33,20 +34,38 @@
                 width: 100%;
                 margin: 0;
             }
-        
+            .image-test {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            .flex-item::-webkit-scrollbar-track {
+            	border-radius: 10px;
+            	background-color: #212121;
+            }
+
+            .flex-item::-webkit-scrollbar {
+            	width: 12px;
+            	background-color: #212121;
+            }
+
+            .flex-item::-webkit-scrollbar-thumb {
+            	border-radius: 10px;
+            	background-color: #555;
+            }
         </style>
         <!-- End temp stuff. -->
     </head>
     <body>
         <div class="flex-container">
-            <section class="flex-item-left_bar">
+            <section class="flex-item-left_bar flex-item">
             	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/YouTube_icon.png/320px-YouTube_icon.png"/>
             	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/YouTube_icon.png/320px-YouTube_icon.png"/>
             	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/YouTube_icon.png/320px-YouTube_icon.png"/>
                 <div>hi1</div>
                 <div>hi2</div>
             </section>
-            <section class="flex-item-right_area">
+            <section class="flex-item-right_area flex-item">
                 <div>hi3</div>
                 <div>hi4</div>
             </section>
